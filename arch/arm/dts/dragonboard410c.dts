@@ -74,7 +74,7 @@
 			index = <0x0>;
 			non-removable;
 			clock = <&clkc 0>;
-			clock-frequency = <100000000>;
+			clock-frequency = <200000000>;
 		};
 
 		sdhci@07864000 {
