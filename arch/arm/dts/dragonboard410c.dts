@@ -136,16 +136,19 @@
 		user1 {
 			label = "miku-red-led";
 			gpios = <&soc_gpios 21 0>;
+			default-state = "on";
 		};
 
 		user2 {
 			label = "miku-blue-led";
 			gpios = <&soc_gpios 22 0>;
+			default-state = "on";
 		};
 
 		user3 {
 			label = "miku-green-led";
 			gpios = <&soc_gpios 23 0>;
+			default-state = "on";
 		};
 
 	};
