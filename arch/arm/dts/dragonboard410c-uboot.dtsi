@@ -33,3 +33,23 @@
 		gpios = <&pm8916_pon 0 0>;
 	};
 };
+
+leds {
+	compatible = "gpio-leds";
+	led@1 {
+		label = "miku-red-led";
+		gpios = <&soc_gpios 21 0>;
+		default-state = "on";
+	};
+	led@2 {
+		label = "miku-blue-led";
+		gpios = <&soc_gpios 22 0>;
+		default-state = "on";
+	};
+	led@3 {
+		label = "miku-green-led";
+		gpios = <&soc_gpios 23 0>;
+		default-state = "on";
+	};
+};
+
