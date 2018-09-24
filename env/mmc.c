@@ -90,23 +90,12 @@ static inline s64 mmc_offset(int copy)
 	defvalue = CONFIG_ENV_OFFSET;
 	propname = dt_prop.offset;
 
-#if defined(CONFIG_ENV_OFFSET_REDUND)
-	if (copy) {
-		defvalue = CONFIG_ENV_OFFSET_REDUND;
-		propname = dt_prop.offset_redund;
-	}
-#endif
 	return fdtdec_get_config_int(gd->fdt_blob, propname, defvalue);
 }
 #else
 static inline s64 mmc_offset(int copy)
 {
 	s64 offset = CONFIG_ENV_OFFSET;
-
-#if defined(CONFIG_ENV_OFFSET_REDUND)
-	if (copy)
-		offset = CONFIG_ENV_OFFSET_REDUND;
-#endif
 	return offset;
 }
 #endif
