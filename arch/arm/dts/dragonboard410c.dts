@@ -46,6 +46,7 @@
 			reg = <0x78b0000 0x200>;
 			u-boot,dm-pre-reloc;
 			clock = <&clkc 4>;
+			status = "disabled";
 		};
 
 		restart@4ab000 {
