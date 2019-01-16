@@ -25,6 +25,10 @@
 #define CONFIG_SYS_LOAD_ADDR		(CONFIG_SYS_SDRAM_BASE + 0x80000)
 #define CONFIG_SYS_BOOTM_LEN		0x1400000 //0x1100000 /* was 17MB, now 20MB max kernel size */
 
+#define CONFIG_DISABLE_CONSOLE
+#define CONFIG_SILENT_CONSOLE
+#define CONFIG_SYS_DEVICE_NULLDEV
+
 /* UART */
 
 /* Generic Timer Definitions */
